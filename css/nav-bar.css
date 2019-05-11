@@ -28,6 +28,14 @@
 .nav .nav__list-link {
     position: relative;
 }
+@keyframes bounceBadge {
+    from {
+        transform: none;
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
 .nav__badge {
     position: absolute;
     top: -7px;
@@ -41,4 +49,5 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    animation: bounceBadge 0.5s ease-in 8;
 }
